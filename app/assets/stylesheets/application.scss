@@ -1,0 +1,23 @@
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+h1{
+  text-align: center;
+}
+
+.image-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* 画像間の間隔を調整 */
+}
+
+.play-btn{
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.header{
+  margin-right: 10px;
+}

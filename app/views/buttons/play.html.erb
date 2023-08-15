@@ -1,0 +1,27 @@
+<br>
+<% if @button_taken %>
+  <div class="text-center">
+    <h1>おめでとう🥳</h1>
+    <%= image_tag "get.png" %>
+    <div>
+      <%= link_to "https://twitter.com/share?url=#{request.url}&text=#{URI.encode_www_form_component("おめでとう、あなたは先輩の第2ボタンが取れました🥳 #第2ボタン戦争")}", title: 'Twitter', target: '_blank', class: 'btn btn-primary my-2' do %>
+        <i class="fab fa-twitter"></i> Twitterで共有
+      <% end %>
+    </div>
+  </div>
+<% else %>
+  <div class="text-center">
+    <h1>残念💩</h1>
+    <%= image_tag "not_get.png" %>
+    <div>
+      <%= link_to "https://twitter.com/share?url=#{request.url}&text=#{URI.encode_www_form_component("残念、先輩の第2ボタンは誰かに取られました。。。 #第2ボタン戦争")}", title: 'Twitter', target: '_blank', class: 'btn btn-primary my-2' do %>
+        <i class="fab fa-twitter"></i> Twitterで共有
+      <% end %>
+    </div>
+  </div>
+<% end %>
+<div class="text-center">
+  <%= link_to root_path, class: "button btn btn-danger" do %>
+    <i class="fas fa-home"></i> トップページへ
+  <% end %>
+</div>
