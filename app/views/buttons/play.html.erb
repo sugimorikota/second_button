@@ -4,9 +4,9 @@
     <h1>おめでとう🥳</h1>
     <%= image_tag "get.png" %>
     <div>
-      <%= link_to "https://twitter.com/share?url=#{request.url}&text=#{URI.encode_www_form_component("おめでとう、あなたは先輩の第2ボタンが取れました🥳 #第2ボタン戦争")}", title: 'Twitter', target: '_blank', class: 'btn btn-primary my-2' do %>
-        <i class="fab fa-twitter"></i> Twitterで共有
-      <% end %>
+    <%= link_to "https://twitter.com/share?url=https://second-button.onrender.com/&text=#{URI.encode_www_form_component("おめでとう、あなたは先輩の第2ボタンが取れました🥳 #第2ボタン戦争")}", title: 'Twitter', target: '_blank', class: 'btn btn-primary my-2' do %>
+      <i class="fab fa-twitter"></i> Twitterで共有
+    <% end %>
     </div>
   </div>
 <% else %>
@@ -14,7 +14,7 @@
     <h1>残念💩</h1>
     <%= image_tag "not_get.png" %>
     <div>
-      <%= link_to "https://twitter.com/share?url=#{request.url}&text=#{URI.encode_www_form_component("残念、先輩の第2ボタンは誰かに取られました。。。 #第2ボタン戦争")}", title: 'Twitter', target: '_blank', class: 'btn btn-primary my-2' do %>
+      <%= link_to "https://twitter.com/share?url=https://second-button.onrender.com/&text=#{URI.encode_www_form_component("残念、先輩の第2ボタンは誰かに取られました。。。 #第2ボタン戦争")}", title: 'Twitter', target: '_blank', class: 'btn btn-primary my-2' do %>
         <i class="fab fa-twitter"></i> Twitterで共有
       <% end %>
     </div>
